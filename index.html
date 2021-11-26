@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Netflix</title>
+	<link rel="shortcut icon" href="img/favicon-_1_.png">
+</head>
+	<style>
+		body{
+         background-color: #000000;
+		}
+
+		*{
+			margin: 0%;
+			padding: 0%;
+		}
+
+		body::-webkit-scrollbar {
+			width: 15px;
+			background: transparent;
+		}
+
+		body::-webkit-scrollbar-thumb {
+			background: rgb(199, 197, 184, .7);
+			border-radius: 10px;
+			border-right: 2px solid;
+			transition: 0.5s;
+		}
+
+		body::-webkit-scrollbar-thumb:hover{
+			background: rgb(234, 68, 68, .9);
+		}
+
+
+		.title{
+			position: absolute;
+			width: 20%;
+			height: 20%;
+			top: -2%;
+			left: 5%;
+			background-color: transparent;
+			background-image: url(img/Netflix.png);
+			background-size: cover;
+		}
+
+
+
+		.Terror{
+			position: absolute;
+			width: 5%;
+			height: 5%;
+			top: 4%;
+			left: 89%;
+			font-family: Arial;
+			background: transparent;
+			color: grey;
+			font-size: 130%;
+			padding-top: 10px;
+			box-sizing: border-box;
+			transition: .3s;
+			text-decoration: none;
+		}
+
+		.Terror:hover{
+			color: white;
+		}
+
+			.Accion{
+			position: absolute;
+			width: 5%;
+			height: 5%;
+			top: 4%;
+			left: 84%;
+			font-family: Arial;
+			background: transparent;
+			color: grey;
+			font-size: 130%;
+			padding-top: 10px;
+			box-sizing: border-box;
+			transition: .3s;
+			text-decoration: none;
+		}
+
+		.Accion:hover{
+			color: white;
+		}
+
+			.romance{
+			position: absolute;
+			width: 5%;
+			height: 5%;
+			top: 4%;
+			left: 77%;
+			font-family: Arial;
+			background: transparent;
+			color: grey;
+			font-size: 130%;
+			padding-top: 10px;
+			box-sizing: border-box;
+			transition: .3s;
+			text-decoration: none;
+		}
+
+		.romance:hover{
+			color: white;
+		}
+
+			.series{
+			position: absolute;
+			width: 5%;
+			height: 5%;
+			top: 4%;
+			left: 72%;
+			font-family: Arial;
+			background: transparent;
+			color: grey;
+			font-size: 130%;
+			padding-top: 10px;
+			box-sizing: border-box;
+			transition: .3s;
+			text-decoration: none;
+		}
+
+		.series:hover{
+			color: white;
+		}
+
+			.inicio{
+			position: absolute;
+			width: 5%;
+			height: 5%;
+			top: 4%;
+			left: 67%;
+			font-family: Arial;
+			background: transparen;
+			color: grey;
+			font-size: 130%;
+			padding-top: 10px;
+			box-sizing: border-box;
+			transition: .3s;
+			text-decoration: none;
+		}
+
+		.inicio:hover{
+			color: white;
+		}
+
+		.se-po{
+			position: absolute;
+			width: 90%;
+			height: 70%;
+			top: 20%;
+			left: 5%;
+			background-image: url(imginicio/you.jpg);
+			background-size: cover;
+			border-radius: 0%;
+			transition: .3s;
+			box-shadow: 5px 5px 9px ;
+		}
+
+		.se-po:hover{
+		 box-shadow: 5px 5px 9px #282424;
+		 border-radius: 10px;
+		 filter: brightness(50%);
+
+		}
+
+		.info-se-po{
+			position: absolute;
+			width: 18%;
+			height: 7%;
+			top: 20%;
+			left: 7%;
+			font-family: Arial;
+			background: transparent;
+			color: #19CB5C;
+			font-weight: bold;
+			font-size: 170%;
+			padding-top: 15px;
+			padding-left: 15px;
+			box-sizing: border-box;
+			display: none;
+		}
+
+
+
+			.info-se-po2{
+			position: absolute;
+			width: 1%;
+			height: 1%;
+			top: 40%;
+			left: 7%;
+			font-family: Sanvito;
+			background: transparent;
+			color: white;
+			font-weight: bold;
+			font-size: 1000%;	
+			padding-top: 15px;
+			padding-left: 15px;
+			box-sizing: border-box;
+			display: none;
+		}
+
+			.info-se-po22{
+			position: absolute;
+			width: 50%;
+			height: 1%;
+			top: 60%;
+			left: 8%;
+			font-family: Sanvito;
+			background: transparent;
+			color: white;
+			font-weight: bold;
+			font-size: 150%;
+			padding-top: 15px;
+			padding-left: 15px;
+			box-sizing: border-box;
+			display: none;
+		}
+
+		.fondo{
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 110%;
+         left: 0%;
+         background-image: url(imginicio/fondo.jpg);
+         background-size: cover;
+         filter: brightness(30%);
+		}
+
+		.movie1{
+	     position: absolute;
+         width: 25%;
+         height: 35%;
+         top: 130%;
+         left: 8%;
+         background: transparent;
+         background-image: url(imginicio/rednotice.jpg);
+         background-size: cover;
+         transition: .3s;
+		}
+
+		.movie1:hover{
+		transform: scale(1.1);
+		border-radius: 20px;
+		box-shadow: 5px 5px 9px #DEA7B5;
+		}
+
+		.movie2{
+	     position: absolute;
+         width: 25%;
+         height: 35%;
+         top: 130%;
+         left: 39.5%;
+         background: transparent;
+         background-image: url(imginicio/nochedefuego.jpg);
+         background-size: cover;
+         transition: .3s;
+		}
+
+		.movie2:hover{
+		transform: scale(1.1);
+		border-radius: 20px;
+		box-shadow: 5px 5px 9px #fff;
+		}
+
+		.movie3{
+	     position: absolute;
+         width: 25%;
+         height: 35%;
+         top: 130%;
+         left: 70%;
+         background: transparent;
+         background-image: url(imginicio/boom.jpg);
+         background-size: cover;
+         transition: .3s;
+		}
+
+		.movie3:hover{
+		transform: scale(1.1);
+		border-radius: 20px;
+		box-shadow: 5px 5px 9px #A7B2DE;
+		}
+
+		.movie4{
+	     position: absolute;
+         width: 25%;
+         height: 35%;
+         top: 170%;
+         left: 8%;
+         background: transparent;
+         background-image: url(imginicio/vivo.jpg);
+         background-size: cover;
+         transition: .3s;
+		}
+
+		.movie4:hover{
+		transform: scale(1.1);
+		border-radius: 20px;
+		box-shadow: 5px 5px 9px #CCA7DE;
+		}
+
+		.movie5{
+	     position: absolute;
+         width: 25%;
+         height: 35%;
+         top: 170%;
+         left: 39.5%;
+         background: transparent;
+         background-image: url(imginicio/harder.jpg);
+         background-size: cover;
+         transition: .3s;
+		}
+
+		.movie5:hover{
+		transform: scale(1.1);
+		border-radius: 20px;
+		box-shadow: 5px 5px 9px #A7DEDE;
+		}
+
+		.movie6{
+	     position: absolute;
+         width: 25%;
+         height: 35%;
+         top: 170%;
+         left: 70%;
+         background: transparent;
+         background-image: url(imginicio/five.jpg);
+         background-size: cover;
+         transition: .3s;
+		}
+
+		.movie6:hover{
+		transform: scale(1.1);
+		border-radius: 20px;
+		box-shadow: 5px 5px 9px #DEA7A7;
+		}
+
+		
+	</style>
+
+
+<body>
+<div class="title"></div>
+<a class="Terror" href="terror.html" >Terror</a>
+<a class="Accion" href="accion.html" >Acción</a>
+<a class="romance" href="romance.html" >Romance</a>
+<a class="series" href="series.html">Series</a>
+<a class="inicio" href="index.html" >Inicio</a>
+<div class="se-po" onmousemove="ispe()"></div>
+<div class="info-se-po" id="isp">Recomendacion 98%</div>
+<div class="info-se-po2" id="isp2">You</div>
+<div class="info-se-po22" id="isp22">You es una serie televisiva de Netflix. ... You es una historia de amor ambientada<br> en el siglo XXI sobre un veinteañero obsesivo pero brillante que usa la híper<br> conectividad que ofrece la tecnología moderna para hacer que la mujer de sus<br> sueños se enamore de él.</div>
+<div class="fondo"></div>
+<a class="movie1" href="https://www.netflix.com/co/" target="https"></a>
+<a class="movie2" href="https://www.netflix.com/co/" target="https"></a>
+<a class="movie3" href="https://www.netflix.com/co/" target="https"></a>
+<a class="movie4" href="https://www.netflix.com/co/" target="https"></a>
+<a class="movie5" href="https://www.netflix.com/co/" target="https"></a>
+<a class="movie6" href="https://www.netflix.com/co/" target="https"></a>
+
+
+</body>
+<script>
+	 
+	 function ispe(){
+	 	isp.style.display="block";
+	 	isp2.style.display="block";
+	 	isp22.style.display="block";
+
+	 }
+
+
+</script>
+</html>
